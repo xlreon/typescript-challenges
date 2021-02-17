@@ -1,7 +1,9 @@
-type MyExlcude<T, K> = K extends T ? never : T
+type Key<T> = keyof T
 
-type MyOmit<T, K extends keyof T> = {
-    [X in MyExlcude<keyof T, K>]: T[X]
+type MyExclude<T, K> = K extends T ? never : K
+
+type MyOmit<T, K extends Key<T>> = {
+    [X in MyExclude<Key<T>, K>]: T[X]
 }
 
 interface Todo {
