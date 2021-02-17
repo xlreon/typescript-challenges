@@ -1,0 +1,11 @@
+{
+  "name": "typescript-challenges",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/xlreon/typescript-challenges.git",
+  "author": "Sidharth Satapathy <sidharth.satapathy9@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@type-challenges/utils": "^0.1.1"
+  }
+}
